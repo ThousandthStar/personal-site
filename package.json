@@ -34,6 +34,7 @@
 		"fs": "0.0.1-security",
 		"gray-matter": "^4.0.3",
 		"markdown-it": "^14.1.0",
+		"memfs": "^4.9.3",
 		"path": "^0.12.7",
 		"prismjs": "^1.29.0",
 		"svelte-fa": "^4.0.2",
