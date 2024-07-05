@@ -3,8 +3,6 @@ import path from 'path';
 import matter from 'gray-matter';
 import { error } from '@sveltejs/kit';
 
-export const prerender = true;
-
 export async function load({params}){
     const { project } = params;
     const files = fs.readdirSync(`src/content/${project}`);
