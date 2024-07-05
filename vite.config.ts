@@ -9,4 +9,12 @@ export default defineConfig({
 			compiler: 'svelte'
 		})
 	],
+	resolve: {
+		alias: [
+		  {
+			find: 'fs',
+			replacement: 'memfs',
+		  },
+		],
+	  },
 });

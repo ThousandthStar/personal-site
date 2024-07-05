@@ -4,4 +4,4 @@ This website was created using [SvelteKit](https://kit.svelte.dev/) and [Vite](h
 
 # Source
 
-You can find the source code for this website 
+You can find the source code for this website [here](https://github.com/ThousandthStar/personal-site/tree/main).
