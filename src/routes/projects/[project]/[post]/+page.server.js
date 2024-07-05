@@ -3,6 +3,8 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
+export const prerender = true;
+
 // @ts-ignore
 export async function load({params}){
     const { project, post } = params; 
