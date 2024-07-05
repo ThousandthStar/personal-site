@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'JetBrains Mono Nerd Font';
+    src: url('/fonts/JetBrainsMono-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono Nerd Font';
+    src: url('/fonts/JetBrainsMono-Bold.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: 'JetBrains Mono Nerd Font', monospace;
+}
+
+/* Custom styles to override Tailwind's default styles */
+h1 {
+    font-size: 2.25rem; /* Equivalent to text-4xl */
+    font-weight: bold;
+    @apply m-2;
+    @apply text-theme-text;
+}
+  
+h2 {
+    font-size: 1.875rem; /* Equivalent to text-3xl */
+    font-weight: bold;
+    @apply m-2;
+    @apply text-theme-text;
+}
+
+h3 {
+    font-size: 1.5rem; /* Equivalent to text-2xl */
+    font-weight: bold;
+    @apply m-2;
+    @apply text-theme-text;
+}
+
+h4 {
+    font-size: 1.25rem; /* Equivalent to text-xl */
+    font-weight: bold;
+    @apply m-2;
+    @apply text-theme-text;
+}
+
+h5 {
+    font-size: 1rem; /* Equivalent to text-lg */
+    font-weight: bold;
+    @apply m-2;
+    @apply text-theme-text;
+}
+
+h6 {
+    font-size: 0.875rem; /* Equivalent to text-base */
+    font-weight: bold;
+    @apply m-2;
+    @apply text-theme-text;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 1.25rem; /* Equivalent to Tailwind's pl-5 */
+    @apply text-theme-text;
+}
+
+li {
+    display: flex;
+    align-items: flex-start;
+    overflow-wrap: break-word; /* or word-break: break-word; */
+}
+
+li::before {
+    content: '-';
+    @apply text-theme-text;
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+}
+
+
+
+ol {
+    list-style-type: decimal;
+    padding-left: 1.25rem; /* Equivalent to Tailwind's pl-5 */
+    @apply text-theme-text;
+}
+p{
+    @apply text-theme-text;
+    @apply m-2;
+}
+
+/* Hide all scrollbars */
+* {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+*::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+  
+a{
+    @apply underline;
+    @apply text-theme-red;
+}
